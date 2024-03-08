@@ -35,7 +35,8 @@ PROGRAM Pertukaran
     A, B, C: Integer
 
 ALGORITMA:
-    ( asumsikan A dan B sudah terdefinisi dengan nilai, misalnya melalui pengisian langsung atau dibaca nilainya dari papan ketik )
+    ( asumsikan A dan B sudah terdefinisi dengan nilai, misalnya melalui pengisian langsung atau <br>
+    dibaca nilainya dari papan ketik )
 
     (pertukaran nilai A dan B)
     C = A (simpan nilai A di tempat penampungan sementara, C)
