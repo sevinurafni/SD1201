@@ -39,6 +39,40 @@ if (X % 10 == 0) {
 }
 ```
 
+```
+#include <iostream>
+using namespace std;
+int main() {
+int j, k;
+for (j = 5; j >= 1; j--) {
+       for (k = 1; k <= j; k++) {
+             cout << k * j << ' ';
+       }
+       cout << endl;
+	}
+	for (j = 1; j <= 5; j++) {
+	for (k = 1; k <= j; k++){ cout << k * j << ' ';
+	       }
+	       cout << endl;
+	}
+	return 0;
+}
+```
+
+```
+#include <iostream>
+using namespace std;
+int main () {
+	int A;
+	for (A=0; A<9; A++)
+	  if (A % 3 == 0)
+	       cout << 'A';
+	  else
+	       cout << 'B';
+	return 0;
+}
+```
+
 4. Tuliskan keluaran (apa yang tercetak di layar) dari program di bawah ini jika N = 8. Program sudah dipastikan lolos kompilasi.
 ```
 #include <iostream>
