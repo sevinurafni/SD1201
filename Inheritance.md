@@ -3,9 +3,10 @@
 Inheritance (warisan) adalah salah satu konsep paling penting dalam pemrograman berorientasi objek. Konsep ini memungkinkan sebuah class (kelas) untuk mewarisi properti dan metode dari class lain. Class yang mewarisi disebut subclass atau derived class, sedangkan class yang memberi warisan disebut superclass atau base class.
 
 ## Tujuan
-- Mengurangi duplikasi kode.
-- Membuat hierarki kelas yang terorganisir.
-- Mendorong penggunaan konsep polimorfisme.
+- Code reusability. \
+Contoh: kelompok hewan sebagai kelas yang terpisah - `Harimau`, `Singa`, dan `Macan Kumbang`. Untuk kelas-kelas ini, dapat membuat fungsi anggota seperti `predator()` karena mereka semua adalah pemangsa, `taring()` karena mereka semua memiliki gigi taring untuk berburu, dan `cakar()` karena ketiga hewan tersebut memiliki cakar yang besar dan tajam.  Sekarang, karena ketiga fungsi tersebut sama untuk kelas-kelas ini, membuat fungsi terpisah untuk semuanya akan menyebabkan redundansi data dan dapat meningkatkan kemungkinan kesalahan.
+- Sifat transitif\
+Contoh: Ada kelas turunan `mamalia` yang mewarisi sifat-sifatnya dari kelas dasar `hewan`. Sekarang, karena sifat pewarisan yang transitif, semua kelas turunan dari `mamalia` akan mewarisi sifat-sifat dari kelas `hewan` juga
 
 ## Syntax
 ```c++
@@ -27,7 +28,7 @@ using namespace std;
 // Kelas dasar Karyawan
 class Karyawan {
 public:
-    string nama = "John";
+    string nama = "Ariela";
     void bekerja() {
         cout << "Sedang bekerja \n";
     }
