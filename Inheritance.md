@@ -48,3 +48,44 @@ int main() {
 }
 
 ```
+
+## Protection Level
+**Protected**: Anggota kelas yang dideklarasikan sebagai protected hanya dapat diakses oleh kelas itu sendiri dan kelas-kelas turunannya (derived classes).
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Kelas dasar Karyawan
+class Karyawan {
+protected:
+    string nama = "Ariela";
+
+public:
+    void bekerja() {
+        cout << "Sedang bekerja \n";
+    }
+
+    string getNama() {
+        return nama;
+    }
+};
+
+// Kelas turunan Programmer yang mewarisi dari Karyawan
+class Programmer : public Karyawan {
+public:
+    string bahasaPemrograman = "C++";
+
+    void tampilkanInfo() {
+        cout << getNama() << " menggunakan bahasa pemrograman " << bahasaPemrograman << endl;
+    }
+};
+
+int main() {
+    Programmer programmer;
+    programmer.getNama();
+    return 0;
+}
+
+
+```
