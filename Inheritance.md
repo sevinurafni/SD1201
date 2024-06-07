@@ -59,7 +59,7 @@ using namespace std;
 // Kelas dasar Karyawan
 class Karyawan {
 protected:
-    string nama = "Yusuf";
+    string nama = "Musa";
 
 public:
     void bekerja() {
