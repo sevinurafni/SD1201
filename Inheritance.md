@@ -10,7 +10,7 @@ Contoh: Ada kelas turunan `mamalia` yang mewarisi sifat-sifatnya dari kelas dasa
 
 ## Syntax
 ```c++
-class Parentclass {
+class ParentClass {
     // properties and methods
 };
 
@@ -59,7 +59,7 @@ using namespace std;
 // Kelas dasar Karyawan
 class Karyawan {
 protected:
-    string nama = "Ariela";
+    string nama = "Yusuf";
 
 public:
     void bekerja() {
@@ -83,7 +83,11 @@ public:
 
 int main() {
     Programmer programmer;
-    programmer.getNama();
+    Karyawan karyawan;
+    cout<< "Nama diambil melalui obj karyawan "<< karyawan.getNama()<< endl;
+    cout<< "Nama diambil melalui obj programmer "<< programmer.getNama()<< endl;
+    programmer.tampilkanInfo();
+    
     return 0;
 }
 
